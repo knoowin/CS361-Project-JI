@@ -4,6 +4,8 @@ The script requires a recent version of Python to run.
 Additionally, the following will be required in the same directory:
 - 'user_login.txt'
 - 'loginAttempt.txt'
+
+Optional files:
 - 'authorizationResults.txt' (will be created if it does not already exist)
 
 Before requesting data, ensure 'user_login.txt', the database of existing credentials is updated.
