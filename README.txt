@@ -12,7 +12,8 @@ Before requesting data, ensure 'user_login.txt', the database of existing creden
 Odd-numbered lines will have usernames and even-numbered lines will have the corresponding passwords.
 'loginAttempt.txt' will have the credentials to be verified, with the username on line 1 and password on line 2.
 
-To request data, run 'credentialsCheck.py'. An example request via the MS Windows command line is as follows:
+To request data, place the credentials to be verified in 'loginAttempt.txt' (line 1: username, line 2: password).
+Run 'credentialsCheck.py'; an example request via the MS Windows command line is as follows:
 <python credentialsCheck.py>
 
 'credentialsCheck.py' will import the credentials database, and return whether the login attempt was valid
