@@ -8,7 +8,7 @@ Additionally, the following will be required in the same directory:
 Optional files:
 - 'authorizationResults.txt' (will be created if it does not already exist)
 
-Before requesting data, ensure 'user_login.txt', the database of existing credentials is updated.
+Before requesting data, ensure 'user_login.txt', the database of existing credentials, is updated.
 Odd-numbered lines will have usernames and even-numbered lines will have the corresponding passwords.
 'loginAttempt.txt' will have the credentials to be verified, with the username on line 1 and password on line 2.
 
