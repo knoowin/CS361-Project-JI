@@ -22,3 +22,4 @@ via 'loginAttempt.txt'. Access this file to receive the text, which will include
 - "wrong username" (login attempt had the wrong username)
 - "wrong password" (login attempt had the wrong password but a correct username)
 
+![UMLsequence](https://github.com/knoowin/CS361-Project-JI/assets/26076181/f321779c-1d84-4b69-8ce8-f2ca5d750005)
