@@ -22,5 +22,3 @@ via 'loginAttempt.txt'. Access this file to receive the text, which will include
 - "wrong username" (login attempt had the wrong username)
 - "wrong password" (login attempt had the wrong password but a correct username)
 
-[UML SEQUENCE DIAGRAM HERE]
-
