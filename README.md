@@ -14,7 +14,7 @@ Odd-numbered lines will have usernames and even-numbered lines will have the cor
 
 To request data, place the credentials to be verified in 'loginAttempt.txt' (line 1: username, line 2: password).
 Run 'credentialsCheck.py'; an example request via the MS Windows command line is as follows:
-<python credentialsCheck.py>
+"python credentialsCheck.py"
 
 'credentialsCheck.py' will import the credentials database, and return whether the login attempt was valid
 via 'loginAttempt.txt'. Access this file to receive the text, which will include one of the following strings:
@@ -22,3 +22,4 @@ via 'loginAttempt.txt'. Access this file to receive the text, which will include
 - "wrong username" (login attempt had the wrong username)
 - "wrong password" (login attempt had the wrong password but a correct username)
 
+![UMLsequence](https://github.com/knoowin/CS361-Project-JI/assets/26076181/f321779c-1d84-4b69-8ce8-f2ca5d750005)
