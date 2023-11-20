@@ -40,6 +40,6 @@ while True:
         with open('credentialsCheckSrv.txt', 'w') as f:  # opens and clears text file
             pass
 
-    break
+        break
 
 
