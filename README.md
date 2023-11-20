@@ -4,6 +4,7 @@ The script requires a recent version of Python to run.
 Additionally, the following will be required in the same directory:
 - 'user_login.txt'
 - 'loginAttempt.txt'
+- 'credentialsCheckSrv.txt'
 
 Optional files:
 - 'authorizationResults.txt' (will be created if it does not already exist)
@@ -16,8 +17,7 @@ To request data, place the credentials to be verified in 'loginAttempt.txt' (lin
 Run 'credentialsCheck.py'; an example request via the MS Windows command line is as follows:
 "python credentialsCheck.py"
 
-'credentialsCheck.py' will import the credentials database, and return whether the login attempt was valid
-via 'loginAttempt.txt'. Access this file to receive the text, which will include one of the following strings:
+'credentialsCheck.py' will import the credentials database. 'credentialsCheck.py' will check whether 'credentialsCheckSrv.txt' has 'run' in the file before returning whether the login attempt was valid via 'loginAttempt.txt'. Access this file to receive the text, which will include one of the following strings:
 - "access granted" (login attempt was successful)
 - "wrong username" (login attempt had the wrong username)
 - "wrong password" (login attempt had the wrong password but a correct username)
