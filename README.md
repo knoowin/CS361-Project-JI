@@ -22,4 +22,5 @@ Run 'credentialsCheck.py'; an example request via the MS Windows command line is
 - "wrong username" (login attempt had the wrong username)
 - "wrong password" (login attempt had the wrong password but a correct username)
 
-![UMLsequence](https://github.com/knoowin/CS361-Project-JI/assets/26076181/f321779c-1d84-4b69-8ce8-f2ca5d750005)
+![UMLsequence](https://github.com/knoowin/CS361-Project-JI/blob/master/UMLsequence_R1.jpg)
+
