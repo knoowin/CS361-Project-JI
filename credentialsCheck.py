@@ -1,3 +1,5 @@
+import time
+
 # import current user login database
 with open('user_login.txt', 'r') as f:
     lines = f.read().split('\n')  # usernames and passwords separated by lines in text file
@@ -12,21 +14,32 @@ for line in lines:
     index += 1
 
 # assess login attempt
-with open('loginAttempt.txt', 'r') as f:
-    loginAttempt = f.read().split()
-userName = loginAttempt[0]
-enteredPassword = loginAttempt[1]
+while True:
+    time.sleep(5)
 
-if userName in authorizedUsers:  # if username exists, check password
-    correctPassword = authorizedUsers.get(userName)
-    if enteredPassword == correctPassword:
-        results = 'access granted'
-    else:
-        results = 'wrong password'
-else:  # username does not exist
-    results = 'wrong username'
+    with open('credentialsCheckSrv.txt', 'r') as f:
+        runStatus = f.read()
 
-with open('authorizationResults.txt', 'w') as f:
-    f.write(results)
+    if runStatus == 'run':
+        with open('loginAttempt.txt', 'r') as f:
+            loginAttempt = f.read().split()
+        userName = loginAttempt[0]
+        enteredPassword = loginAttempt[1]
+
+        if userName in authorizedUsers:  # if username exists, check password
+            correctPassword = authorizedUsers.get(userName)
+            if enteredPassword == correctPassword:
+                results = 'access granted'
+            else:
+                results = 'wrong password'
+        else:  # username does not exist
+            results = 'wrong username'
+
+        with open('authorizationResults.txt', 'w') as f:
+            f.write(results)
+        with open('credentialsCheckSrv.txt', 'w') as f:  # opens and clears text file
+            pass
+
+    break
 
 
